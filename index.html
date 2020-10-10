@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="my_styles.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+
+        <a class="navbar-brand md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ">
+                <li class="nav-item active">
+                    <a class="nav-link md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="bgimg-1">
+            <div class="caption">
+                <span class="title">Hello, I'm </span>
+                <span class="highlight">Mike Treml</span>
+                <div class="title">I am a Programmer</div>
+            </div>
+        </div>
+        <div class="bgimg-2">
+            <div class="grid-container">
+                <div class="grid-item-1">
+                    <img src="me.jpg">
+
+                </div>
+                <div class="grid-item-2">
+                    <div class=" about ">
+                        <p class="highlight">About Me:</p>
+                        <p>I am an engineer at heart. I love building and fixing. Whether it is designing a woodworking project or coding something new, there is much joy to be found in the design process. But even more, enjoyment can be found in completing
+                            the project. I also love learning new things and figuring out ways to make my projects even better.
+                        </p>
+                        <p> I rediscovered my love for programming at DIC Imaging Product. By working my way up through the company, from a production associate to the Purchasing manager. I had multiple opportunities to dust off my C++ knowledge from high
+                            school. The projects I had a chance to work on made the time fly by so fast. A lot of those days, I would work through my lunch without knowing it most of the time. I would look up at the clock. It would be well past time to
+                            go head for the day. From there, it only made sense to prose a degree in programming. I went to MATC to get my Associate Degree in programming/analysis. A couple of months before my graduation date. I was offered the Purchasing
+                            manager role. It was a learning experience that I couldn’t pass up. After a couple of years in the Purchasing Manager, it was finally time to go after my dream career. </p>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="grid-item">
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div style=" position:relative; ">
+            <div style="color:--orange;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify; ">
+                <p>Scroll up and down to .</p>
+            </div>
+        </div>
+
+        <div class="bgimg-3 ">
+            <div class="caption ">
+                <span class="border " style="background-color:transparent;font-size:25px;color: #f7f7f7; ">SCROLL UP</span>
+            </div>
+        </div>
+
+        <div style="position:relative; ">
+            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify; ">
+                <p>Scroll up and down to r.</p>
+            </div>
+        </div>
+
+        <div class="bgimg-1 ">
+            <div class="caption ">
+                <span class="border "></span>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script>
+        var h = document.documentElement,
+            b = document.body,
+            st = 'scrollTop',
+            sh = 'scrollHeight';
+
+        var percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+        var elements = document.getElementsByClassName("progress-bar progress-bar-striped bg-info ");
+        elements.style.width = (percent + "px ");
+    </script>
+</body>
+
+</html>

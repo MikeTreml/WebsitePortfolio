@@ -1,0 +1,216 @@
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item1 {
+    padding: 20px;
+    font-size: 30px;
+    min-width: 900px;
+}
+
+.grid-item2 {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+
+.parallax__layer--back {
+    transform: translateZ(-1px);
+}
+
+.about {
+    left: 30px;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 2vw;
+    font-weight: 300;
+    line-height: 1.1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.438);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.normal {
+    width: 100%;
+    height: 100vh;
+    background: #3a3f44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+h2 {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 130px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    color: #fff;
+    word-spacing: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.parallax h1 {
+    color: #fff;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.parallax:nth-child(1) h1 {
+    text-align: left;
+}
+
+.normal h1 {
+    color: #333;
+}
+
+.highlight {
+    color: teal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+}
+
+.title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("Alarm.jpg");
+    min-height: 100vh;
+}
+
+.bgimg-2 {
+    background-image: url("WoodPlank.webp");
+    min-height: 60vh;
+}
+
+.bgimg-3 {
+    background-image: url("Laptop.jpg");
+    min-height: 100vh;
+}
+
+.img-1 {
+    image: url("me.jpg");
+}
+
+.img-2 {
+    background-image: url("mes.jpeg");
+    padding-left: 50px;
+    padding-top: 200px;
+    height: 100vh;
+    width: 40vw;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 40px 100px;
+    background-attachment: fixed;
+}
+
+.containerimg {
+    padding-left: 50px;
+    padding-top: 200px;
+    height: 100vh;
+    width: 800px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 40px 100px;
+    background-attachment: fixed;
+}
+
+.item {
+    width: 60px;
+    min-height: 60px;
+    max-height: auto;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 30vw;
+    height: auto;
+    object-fit: contain;
+}
+
+.caption {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption2 {
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    width: 100%;
+    background-position: 40px 100px;
+    background-attachment: fixed;
+    font-size: 4vw;
+    color: #f7f7f7;
+    font-weight: bolder;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
