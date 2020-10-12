@@ -53,11 +53,9 @@
             <div class="grid-container">
                 <div class="grid-item-1">
                     <img src="me.jpg" style="padding-top: 20px;">
-
                 </div>
                 <div class="grid-item-2">
                     <div class="about">
-                        
                         <img src="About me.png" style="width: 250px; padding-bottom: 5px;">
                         <p>I am an engineer at heart. I love building and fixing. Whether it is designing a woodworking project or coding something new, there is much joy to be found in the design process. But even more, enjoyment can be found in completing
                             the project. I also love learning new things and figuring out ways to make my projects even better.
@@ -68,42 +66,25 @@
                             manager role. It was a learning experience that I couldn’t pass up. After a couple of years in the Purchasing Manager, it was finally time to go after my dream career.
                         </p>
                     </div>
-
-
                 </div>
             </div>
         </div>
         <div id="projects" style=" position:relative; height:50px;">
-            <div style="color:--orange;text-align:center;padding:50px 80px;text-align: justify; ">
-
-            </div>
+            <div style="color:--orange;text-align:center;padding:50px 80px;text-align: justify; "></div>
+            <img src="space.jpg">
         </div>
-        
         <div class="bgimg-3 ">
             <img src="project.png" style="width: 250px; padding-bottom: 5px; padding-left: 20px; padding-top: 20px;">
-            
             <div id="projectfill" class="wrapper">
-                
-                
-
-                
-                
-
-
-
-
-                
                 <span class="border " style="background-color:transparent;font-size:25px;color: #f7f7f7; "></span>
             </div>
         </div>
-
         <div id="contact" style=" position:relative; height:50px;">
             <div style="color:--orange;background-color: #adb6be00;text-align:center;padding:50px 80px;text-align: justify; ">
             </div> 
         </div>
         <div class="bgimg-4" >
-           
-            <a class="highlight_contact" href="mailto:miketreml@mac.com" style="padding-left: 20px;">Email Me</a>
+            <a class="highlight_contact" href="mailto:miketreml@mac.com" style="align-items: center;">Email Me</a>
             <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" 
             data-vanity="mike-treml-51017364" style=" padding-left: 20px; padding-top: 350px;">
             <a class="LI-simple-link" href="https://www.linkedin.com/in/mike-treml-51017364?trk=profile-badge"></a>
@@ -129,14 +110,14 @@
         var wrapper = document.getElementById("projectfill");
         function showInfo(data) {
             for (var i = 0; i < data.length; i++) {
-                wrapper.innerHTML += '<div class="box a">'+
+                wrapper.innerHTML += '<a href="'+data[i].githuburl+'"><div class="box a">'+
             '<p class="box b">'+data[i].title+'</p>'+
                 '<div class="box c">'+
                    '<p>'+data[i].body+' </p>'+
                    '</div>'+
                    '<div class="box d"><img src="'+data[i].img+'" class="github"/>'+
                     '</div>'+
-                '</div>';    
+                '</div></a>';    
         }
         }
         wrapper.innerHTML = myhtml
