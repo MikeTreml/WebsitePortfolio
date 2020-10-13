@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="my_styles.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-
-        <a class="navbar-brand md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav ">
-                <li class="nav-item active">
-                    <a class="nav-link md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" onclick="document.getElementById('home').scrollIntoView();">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" onclick="document.getElementById('aboutme').scrollIntoView();">About Me</a>
-                    
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" onclick="document.getElementById('projects').scrollIntoView();">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link md-opjjpmhoiojifppkkcdabiobhakljdgm_doc" onclick="document.getElementById('contact').scrollIntoView();">Contact</a>
-                </li>
-            </ul>
+    <nav class="fixed-top">
+        <div class="topnav" id="myTopnav" >
+            <a class="active" onclick="document.getElementById('home').scrollIntoView();" >Home</a>
+            <a onclick="document.getElementById('aboutme').scrollIntoView();">About Me</a>
+            <a onclick="document.getElementById('projects').scrollIntoView();">Projects</a>
+            <a onclick="document.getElementById('contact').scrollIntoView();">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
         </div>
     </nav>
-
     <div id="home" class="main">
         <div class="bgimg-1">
             <div class="caption">
@@ -41,27 +27,24 @@
                 <div class="title">I am a Programmer</div>
             </div>
         </div>
-
         <div id="aboutme" style=" position:relative; height:50px;">
             <div class="bgimg-5" >
             </div> 
         </div>
-
-
         <div  class="bgimg-2">
             <div class="grid-container">
                 <div class="grid-item-1">
-                    <img src="me.jpg" style="padding-top: 20px;">
+                    <img src="images/me.jpg" style="padding-top: 20px;">
                 </div>
                 <div class="grid-item-2">
                     <div class="about">
-                        <img src="About me.png" style="width: 250px; padding-bottom: 5px;">
+                        <img src="images/About me.png" style="width: 21vw;">
                         <p>I am an engineer at heart. I love building and fixing. Whether it is designing a woodworking project or coding something new, there is much joy to be found in the design process. But even more, enjoyment can be found in completing
                             the project. I also love learning new things and figuring out ways to make my projects even better.
                         </p>
                         <p> I rediscovered my love for programming at DIC Imaging Product. By working my way up through the company, from a production associate to the Purchasing manager. I had multiple opportunities to dust off my C++ knowledge from high
                             school. The projects I had a chance to work on made the time fly by so fast. A lot of those days, I would work through my lunch without knowing it most of the time. I would look up at the clock. It would be well past time to
-                            go head for the day. From there, it only made sense to prose a degree in programming. I went to MATC to get my Associate Degree in programming/analysis. A couple of months before my graduation date. I was offered the Purchasing
+                            go head for the day. From there, it only made sense to posses a degree in programming. I went to MATC to get my Associate Degree in programming/analysis. A couple of months before my graduation date. I was offered the Purchasing
                             manager role. It was a learning experience that I couldn’t pass up. After a couple of years in the Purchasing Manager, it was finally time to go after my dream career.
                         </p>
                     </div>
@@ -73,7 +56,7 @@
             </div> 
         </div>
         <div class="bgimg-3 ">
-            <img src="project.png" style="width: 250px; padding-bottom: 5px; padding-left: 20px; padding-top: 20px;">
+            <img src="images/project.png" style="width: 250px; padding-bottom: 5px; padding-left: 20px; padding-top: 20px;">
             <div id="projectfill" class="wrapper">
                 <span class="border " style="background-color:transparent;font-size:25px;color: #f7f7f7; "></span>
             </div>
@@ -83,18 +66,17 @@
             </div> 
         </div>
         <div class="bgimg-4" >
-            <br>
-            <img src="email.png" href="mailto:miketreml@mac.com" style="width: 250px; padding-bottom: 5px; padding-left: 50px; padding-top: 600px;">
-            <img src="linkedin.png" href="https://www.linkedin.com/in/miketreml?trk=profile-badge" style="width: 400px; padding-bottom: 5px; padding-left: 100px; padding-top: 600px;">
+            <img src="images/email.png" href="mailto:miketreml@mac.com" style="width: 175px;  padding-left: 50px; padding-top: 50vh;">
+            <img src="images/linkedin.png" href="https://www.linkedin.com/in/miketreml?trk=profile-badge" style="width: 300px;  padding-left: 50px;  padding-top: 50vh; ">
             <div class="LI-profile-badge highlight_contact"  data-version="v1" style="padding-left: 50px; padding-top: 50px;" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="miketreml"><a class="LI-simple-link" href='https://www.linkedin.com/in/miketreml?trk=profile-badge'></a></div>
         </div>
     </div>
 
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <script type="text/javascript" src="tabletop.js"></script>
+    <script type="text/javascript" src="script/tabletop.js"></script>
     <script type="text/javascript">
         var public_spreadsheet_url = '1dB3SR1FrTbTvV9OLCunEFVyw3COjsFmVsG6hSNcQ3w4';
-    
+       
         function init() {
             Tabletop.init( { key: public_spreadsheet_url,callback: showInfo,simpleSheet: true } );
         }
@@ -104,18 +86,29 @@
         var wrapper = document.getElementById("projectfill");
         function showInfo(data) {
             for (var i = 0; i < data.length; i++) {
-                wrapper.innerHTML += '<a href="'+data[i].githuburl+'"><div class="box a">'+
-            '<p class="box b">'+data[i].title+'</p>'+
-                '<div class="box c">'+
+                wrapper.innerHTML += '<a href="'+data[i].githuburl+'"><div class="box_a">'+
+            '<p class="box_b">'+data[i].title+'</p>'+
+                '<div class="box_c">'+
                    '<p>'+data[i].body+' </p>'+
                    '</div>'+
-                   '<div class="box d"><img src="'+data[i].img+'" class="github"/>'+
+                   '<div class="box_d"><img src="'+data[i].img+'" class="github"/>'+
                     '</div>'+
                 '</div></a>';    
         }
         }
         wrapper.innerHTML = myhtml
     </script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive ";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
 </body>
 
 </html>
